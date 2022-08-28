@@ -1,0 +1,114 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: #ECF0F3;
+    /* background-color: yellowgreen; */
+}
+.login-div{
+    width: 280px;
+    height: 500px;
+    padding: 60px 35px 35px;
+    margin: auto;
+    margin: 10% auto;
+    border-radius: 35px;
+    background: #ECF0F3;
+    box-shadow: 13px 13px 20px  #5555,
+                -13px 13px 20px #CBCED8
+    /* box-shadow: 13px 13px 20px  red,
+                -13px 13px 20px yellow */
+}
+
+.logo img{
+    height: 110px;
+    width: 110px;
+    border-radius: 50px;
+}
+.logo{
+    margin: -5px auto;
+    border-radius: 20%;
+    border: none;
+    width: 120px;
+    height: 120px;
+    background: inherit;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 0 2px fbfbfb, 0 0 0 5px #ECF0F3, 8px 8px 15px #A7AAAF, -8px -8px 15px #fff;
+
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 24px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    margin-top: -30px;
+    color: #a949e1;
+}
+.form-field{
+    width: 100%;
+    padding: 50px 5px 5px 5px;
+    margin-top: -20px;
+}
+
+.form-field input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1rem;
+    color:grey;
+    padding: 20px 10px 20px 10px;
+}
+.email-div, .password-div{
+    margin-bottom: 35px;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 5px #CBCED1,
+                inset -5px -5px 5px #fff;
+}
+.form-field span{
+    height: 22px;
+    margin: 0 5px -3px 25px;
+    color: grey;
+}
+.login-btn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: -5px;
+    color: #fff;
+    text-align: center;
+    background: #a949e1;
+    box-shadow: 8px 8px 8px #b1b1b1,
+                -8px -8px 8px #fff;
+    transition: 1s;
+}
+
+.login-btn:hover{
+    background: #6f0399
+}
+
+.login-btn:active{
+    background: #6f0399;
+}
+
+.links{
+    padding: 20px 0 0 ;
+    text-align: center;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #555;
+}
+.links a:hover{
+    text-decoration: underline;
+    font-size: 0.8rem;
+    color: #555;
+}
