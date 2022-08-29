@@ -2,8 +2,8 @@
     font-family: 'Open Sans', sans-serif;
 }
 body{
-    background-color: #ECF0F3;
-    /* background-color: yellowgreen; */
+    /* background-color: #ECF0F3; */
+    background-color: yellowgreen;
 }
 .login-div{
     width: 280px;
@@ -13,10 +13,10 @@ body{
     margin: 10% auto;
     border-radius: 35px;
     background: #ECF0F3;
-    box-shadow: 13px 13px 20px  #5555,
-                -13px 13px 20px #CBCED8
-    /* box-shadow: 13px 13px 20px  red,
-                -13px 13px 20px yellow */
+    /* box-shadow: 13px 13px 20px  #5555,
+                -13px 13px 20px #CBCED8 */
+    box-shadow: 13px 13px 20px  red,
+                -13px 13px 20px yellow
 }
 
 .logo img{
@@ -34,7 +34,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 0 0 0 2px fbfbfb, 0 0 0 5px #ECF0F3, 8px 8px 15px #A7AAAF, -8px -8px 15px #fff;
+    /* box-shadow: 0 0 0 2px fbfbfb, 0 0 0 5px #ECF0F3, 8px 8px 15px #A7AAAF, -8px -8px 15px #fff; */
 
 }
 .title{
@@ -71,7 +71,7 @@ body{
     margin: 0 5px -3px 25px;
     color: grey;
 }
-.login-btn{
+/* .login-btn{
     outline: none;
     border: none;
     cursor: pointer;
@@ -95,7 +95,7 @@ body{
 
 .login-btn:active{
     background: #6f0399;
-}
+} */
 
 .links{
     padding: 20px 0 0 ;
