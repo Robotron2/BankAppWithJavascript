@@ -1,3 +1,11 @@
+// const testRegex = () =>{
+//     let userEmailaddress = inputID.value
+//     let regexEmail = / ^(([\a-z])+([@])+([\w])+([.])+([\a-z]{1,5})+([.][\w]{1,5})?)$/
+//     let testRegexEmail = regexEmail.test("inputID.value")
+//     console.log(testRegexEmail)
+//     console.log(userEmailaddress)
+// }
+
 const closeNav = () => {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
@@ -43,9 +51,11 @@ const logIn =()=>{
     if(Email.value == "" || Password.value ==""){
         // alert('Oppss! Kindly fill in your Email and Password')
         error.innerHTML = 'Oppss! Kindly fill in your Email and Password'
+        setTimeout(clearErrorMsg, 1000)
     }
     else{
         for(i=0; i<detailsOfUser.length; i++){
+
             if(detailsOfUser[i].email== Email.value && detailsOfUser[i].password== Password.value){
                 found = true
                 break;
@@ -59,8 +69,13 @@ const logIn =()=>{
         else{
             // alert("Incorrect Email or Password")
             error.innerHTML = 'Incorrect Email or Password!'
+            setTimeout(clearErrorMsg, 1000)
             Email.value =''
             Password.value = ''
         }
     }
+}
+
+const clearErrorMsg = () =>{
+    error.innerHTML = ""
 }

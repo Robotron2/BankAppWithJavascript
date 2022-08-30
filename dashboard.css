@@ -178,7 +178,7 @@ main .table-data {
 	display: flex;
 	flex-wrap: wrap;
 	grid-gap: 24px;
-	margin-top: 24px;
+	margin-top: 50px;
 	width: 100%;
     background-color: #EAF6F6;
 	color: var(--dark);
