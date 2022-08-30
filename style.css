@@ -112,3 +112,45 @@ body{
     font-size: 0.8rem;
     color: #555;
 }
+
+
+/* Please Wait page */
+
+.animate-word h1{
+    color: red;
+    /* animation: animate-word 1s infinite; */
+}
+
+
+
+@keyframes animate-word {
+    0%   {color: #6f0399;}
+    25%  {color: #24bdc3;}
+    50%  {color: #a949e1;}
+    100% {color: #6f0399;}
+}
+
+
+@media (max-width: 400px){
+    .container-main{
+    margin-top: 98%;
+    }
+}
+
+
+@media (min-width: 401px) and (max-width: 420px){
+    .container-main{
+    margin-top: 80%;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 460px){
+    .container-main{
+    margin-top: 80%;
+    }
+}
+@media (min-width: 421px) and (max-width: 460px){
+    .container-main{
+    margin-top: 80%;
+    }
+}
