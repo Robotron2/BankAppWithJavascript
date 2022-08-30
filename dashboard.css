@@ -48,9 +48,6 @@ padding: 10px 15px;
 border: none;
 }
 
-/* .openbtn:hover {
-background-color: #6f0399;
-} */
 
 #main {
 transition: margin-left .5s;
@@ -123,7 +120,7 @@ display: inline-flex;
 	pointer-events: none;
 }
 .content main .head-title .left .breadcrumb li span {
-	color: black;
+	color: #27b5ef;
     text-decoration: none;
     font-size: 20px;
 	pointer-events: none;
@@ -301,7 +298,7 @@ main .table-data {
 }
 
 .closebtn{
-    color: #fff !important;
+    color: #27b5ef !important;
     background-color: inherit;
 }
 
@@ -310,7 +307,7 @@ main .table-data {
         font-size: 50px;
         cursor: pointer;
         background: inherit;
-        color: white;
+        color: #6f0399;
         padding: 10px 15px;
         border: none;
     }
