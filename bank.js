@@ -24,7 +24,9 @@ if(localStorage.details){
 }
 const register= ()=>{
     if(firstname.value=="" || lastname.value== "" || useremail.value=="" || userpassword.value==""){
-        alert("Kindly fill in your details!")
+        // alert("Kindly fill in your details!")
+        disp.innerHTML = "Kindly fill all details"
+        setTimeout(clearErrorMsg, 1000)
     }
     else{
         userDetails={
@@ -54,7 +56,7 @@ const logIn =()=>{
         setTimeout(clearErrorMsg, 1000)
     }
     else{
-        for(i=0; i<detailsOfUser.length; i++){
+        for(i = 0; i < detailsOfUser.length; i++){
 
             if(detailsOfUser[i].email== Email.value && detailsOfUser[i].password== Password.value){
                 found = true
@@ -67,7 +69,6 @@ const logIn =()=>{
                 
         }
         else{
-            // alert("Incorrect Email or Password")
             error.innerHTML = 'Incorrect Email or Password!'
             setTimeout(clearErrorMsg, 1000)
             Email.value =''
