@@ -118,7 +118,11 @@ body{
 
 .animate-word h1{
     color: red;
-    /* animation: animate-word 1s infinite; */
+    animation: animate-word 1s infinite;
+}
+
+.container-main{
+    font-size: 1.5rem;
 }
 
 
@@ -131,9 +135,10 @@ body{
 }
 
 
+
 @media (max-width: 400px){
     .container-main{
-    margin-top: 98%;
+    margin-top: 98% !important;
     }
 }
 
@@ -149,8 +154,25 @@ body{
     margin-top: 80%;
     }
 }
-@media (min-width: 421px) and (max-width: 460px){
+@media (min-width: 461px) and (max-width: 480px){
     .container-main{
     margin-top: 80%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 500px){
+    .container-main{
+    margin-top: 80%;
+    }
+}
+@media (max-width: 1200px){
+    .container-main{
+    margin-top: 30%;
+    }
+}
+
+@media (min-width: 1201px){
+    .container-main{
+    margin-top: 20%;
     }
 }
