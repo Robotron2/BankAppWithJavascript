@@ -35,6 +35,7 @@ const logIn =()=>{
     if(Email.value == "" || Password.value ==""){
         // alert('Oppss! Kindly fill in your Email and Password')
         error.innerHTML = 'Oppss! Kindly fill in your Email and Password'
+        
     }
     else{
         for(i=0; i<detailsOfUser.length; i++){
