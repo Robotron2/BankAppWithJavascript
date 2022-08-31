@@ -36,15 +36,10 @@ const register= ()=>{
         lastname.value = ""
         useremail.value = ""
         userpassword.value = ""
-        window.location ="animate.html"
+        window.location =".html"
     }
 }
-// Animate page
-const pleaseWait = () =>{
-    setTimeout(100000)
-    window.location ="login.html"
-    
-}
+
 
 
     let found = false
