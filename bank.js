@@ -29,7 +29,7 @@ const register= ()=>{
             password: userpassword.value
         }
         detailsOfUser.push(userDetails)
-        console.log(detailsOfUser)
+        // console.log(detailsOfUser)
         localStorage.setItem('details',JSON.stringify(detailsOfUser))
         // alert("Congratulations!, You have Successfully signed Up and your details has been stored.")
         firstname.value = ""
