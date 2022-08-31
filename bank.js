@@ -10,15 +10,10 @@ const openNav = () => {
 }
 
 
-let regexForEmail = /^(([\a-z])+([@])+([\w])+([.])+([\a-z]{1,5})+([.][\w]{1,5})?)$/
-const testRegex = ()=>{
-    console.log(regexForEmail.test(userInput.value))
-}
-
-
-
-
-
+// let regexForEmail = /^(([\a-z])+([@])+([\w])+([.])+([\a-z]{1,5})+([.][\w]{1,5})?)$/
+// const testRegex = ()=>{
+//     console.log(regexForEmail.test(userInput.value))
+// }
 
 
 error = document.getElementById('disp')
