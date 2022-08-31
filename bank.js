@@ -9,6 +9,18 @@ const openNav = () => {
         document.getElementById("mainbtn").style.visibility = "collapse";
 }
 
+
+let regexForEmail = /^(([\a-z])+([@])+([\w])+([.])+([\a-z]{1,5})+([.][\w]{1,5})?)$/
+const testRegex = ()=>{
+    console.log(regexForEmail.test(userInput.value))
+}
+
+
+
+
+
+
+
 error = document.getElementById('disp')
 detailsOfUser = []
 if(localStorage.details){
@@ -36,17 +48,9 @@ const register= ()=>{
         lastname.value = ""
         useremail.value = ""
         userpassword.value = ""
-        window.location ="animate.html"
+        window.location ="login.html"
     }
 }
-// Animate page
-const pleaseWait = () =>{
-    setTimeout(100000)
-    window.location ="login.html"
-    
-}
-
-
     let found = false
 const logIn =()=>{
     // console.log(detailsOfUser[0].email)
