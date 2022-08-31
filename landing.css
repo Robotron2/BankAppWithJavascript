@@ -78,6 +78,7 @@ header nav ul li a:hover {
   background-color: rgba(17, 25, 40, 0.81);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
+  margin-left: -40px;
 }
 .section-heading p {
   font-family: "Roboto", sans-serif;
@@ -93,6 +94,8 @@ header nav ul li a:hover {
 }
 #card {
   background-color: #9ccde0;
+  margin: 2%;
+  
 }
 
 .card {
