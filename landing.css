@@ -34,7 +34,7 @@ header nav ul {
 }
 
 header nav ul li {
-  margin: 0 1em;
+  margin: 0 1rem;
 }
 
 header nav ul li a {
@@ -75,4 +75,7 @@ header nav ul li a:hover {
   color: gold;
   text-align: center;
   display: flex;
+}
+#card {
+  background-color: #22d7a2;
 }
