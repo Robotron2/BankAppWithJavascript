@@ -89,6 +89,47 @@ header nav ul li a:hover {
   box-shadow: inset -5px -5px 10px #6c8d9b, inset 5px 5px 10px #ccffff;
 }
 footer {
+  margin: 5 0px;
   display: flex;
-  background-color: #6c8d9b;
+  /* background-color: #6c8d9b; */
+  /* color: blueviolet; */
+  font-weight: 600;
+  border-radius: 0px;
+  background: #9eb2e0;
+  box-shadow: inset -5px -5px 24px #7b8baf, inset 5px 5px 24px #c1d9ff;
+}
+
+footer p {
+  padding: 10px 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(43, 24, 171);
+  font-weight: 600;
+  font-size: larger;
+}
+
+footer a {
+  text-decoration: none;
+  color: navy;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+.footer-items {
+  /* border: medium solid red; */
+  margin: 0 100px;
+  width: 100vw;
+}
+
+#accor-title {
+  padding: 5px;
+  text-align: center;
 }
