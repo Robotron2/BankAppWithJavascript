@@ -31,14 +31,22 @@ const register= ()=>{
         detailsOfUser.push(userDetails)
         console.log(detailsOfUser)
         localStorage.setItem('details',JSON.stringify(detailsOfUser))
-        alert("Congratulations!, You have Successfully signed Up and your details has been stored.")
+        // alert("Congratulations!, You have Successfully signed Up and your details has been stored.")
         firstname.value = ""
         lastname.value = ""
         useremail.value = ""
         userpassword.value = ""
-        window.location ="index.html"
+        window.location ="animate.html"
     }
 }
+// Animate page
+const pleaseWait = () =>{
+    setTimeout(100000)
+    window.location ="login.html"
+    
+}
+
+
     let found = false
 const logIn =()=>{
     // console.log(detailsOfUser[0].email)
@@ -66,8 +74,9 @@ const logIn =()=>{
         }
     }
 }
+ // Dashboard
 
-const clearErrorMsg = () =>{
-    error.innerHTML = ""
-}
+
+
+
 
