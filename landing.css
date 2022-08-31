@@ -5,11 +5,12 @@
   box-sizing: border-box;
 }
 header {
-  background-color: #20c997;
+  /* background-color: brown; */
   height: 6em;
   border-radius: 0px;
-  background: #20c997;
-  box-shadow: inset 5px -5px 10px #1ebb8c, inset -5px 5px 10px #22d7a2;
+  border-radius: 0px;
+  background: #9ccde0;
+  box-shadow: inset -5px -5px 10px #6c8d9b, inset 5px 5px 10px #ccffff;
 }
 
 header div {
@@ -47,6 +48,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
   background-color: #d63384;
+  color: blue;
 }
 .background {
   width: 100%;
@@ -77,5 +79,12 @@ header nav ul li a:hover {
   display: flex;
 }
 #card {
-  background-color: #22d7a2;
+  background-color: #9ccde0;
+}
+
+.card {
+  margin: 10px;
+  border-radius: 0px;
+  background: #9ccde0;
+  box-shadow: inset -5px -5px 10px #6c8d9b, inset 5px 5px 10px #ccffff;
 }
