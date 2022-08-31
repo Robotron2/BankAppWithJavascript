@@ -88,3 +88,7 @@ header nav ul li a:hover {
   background: #9ccde0;
   box-shadow: inset -5px -5px 10px #6c8d9b, inset 5px 5px 10px #ccffff;
 }
+footer {
+  display: flex;
+  background-color: #6c8d9b;
+}
