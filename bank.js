@@ -31,15 +31,14 @@ const register= ()=>{
 }
     let found = false
 const logIn =()=>{
-    // console.log(detailsOfUser[0].email)
     if(Email.value == "" || Password.value ==""){
-        // alert('Oppss! Kindly fill in your Email and Password')
         error.innerHTML = 'Oppss! Kindly fill in your Email and Password'
     }
     else{
+        error.innerHTML = ''
         for(i=0; i<detailsOfUser.length; i++){
             if(detailsOfUser[i].email== Email.value && detailsOfUser[i].password== Password.value){
-                console.log(useremail.value);
+                // console.log(useremail.value);
                 found = true
                 break;
             }
