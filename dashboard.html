@@ -55,7 +55,7 @@
                         <span class="text">
                             <h5>Balance</h5>
                             <div id="balance-div">
-                                <h2 id="amountFromJavascript">1000</h2>
+                                <h2 id="displayBalance">1000</h2>
                             </div>
                             <div id="accountNum"></div>
                         </span>
@@ -74,11 +74,11 @@
                             <!-- Modal content -->
                             <div class="modal-content">
                                 <span class="close">&times;</span>
-                                <input class="rounded-pill" type="text" name="" id="" placeholder="Name of recipient">
-                                <input class="rounded-pill" type="text" name="" id="" placeholder="Account Number">
-                                <input class="rounded-pill" type="text" name="" id="" placeholder="Bank Name">
-                                <input class="rounded-pill" type="text" name="" id="" placeholder="Amount">
-                                <button class="btn btn-lg btn-outline-purple">Send Money</button>
+                                <input class="rounded-pill" type="text" name="" id="nameofrecipient" placeholder="Name of recipient">
+                                <input class="rounded-pill" type="number" name="" id="acctNum" placeholder="Account Number">
+                                <input class="rounded-pill" type="text" name="" id="bankname" placeholder="Bank Name">
+                                <input class="rounded-pill" type="number" name="" id="amountEntered" placeholder="Amount">
+                                <button class="btn btn-lg btn-outline-purple" onclick="sendMoney()">Send Money</button>
                             </div>
                         </div>
                     </li>
