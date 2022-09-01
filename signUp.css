@@ -1,15 +1,13 @@
 .signUp-div{
-    width: 265px;
-    height: 580px;
+    width: 295px;
+    height: 610px;
     padding: 30px 35px 35px;
     margin: auto;
-    margin: 10% auto;
+    margin: 4% auto;
     border-radius: 35px;
     background: #ECF0F3;
     box-shadow: 13px 13px 20px  #5555,
                 -13px 13px 20px #CBCED8
-    /* box-shadow: 13px 13px 20px  red,
-                -13px 13px 20px yellow */
 }
 
 .logo-signUp img{
@@ -27,7 +25,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 0 0 0 2px fbfbfb, 0 0 0 5px #ECF0F3, 8px 8px 15px #A7AAAF, -8px -8px 15px #fff;
+    box-shadow: 0 0 0 2px inherit, 0 0 0 5px #ECF0F3, 8px 8px 15px #A7AAAF, -8px -8px 15px #fff;
 
 }
 .title{
@@ -105,3 +103,5 @@
     font-size: 0.8rem;
     color: #555;
 }
+
+
