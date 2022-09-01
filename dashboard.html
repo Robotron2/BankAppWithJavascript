@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a875a20b85.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="dashboard.css">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Dashboard</title>
+    </head>
+
+    <body onload="userDetailsOnLoad()">
+        <div class="contaier-div">
+            <button id="mainbtn" class="openbtn" onclick="openNav()"><span class="fa-solid fa-bars"
+                    style="color: #27b5ef;"></span></button>
+            <div id="mySidebar" class="sidebar">
+                <button class="closebtn" onclick="closeNav()"><span class="fa-solid fa-xmark"></span></button>
+                <div class="logo-dashboard"><img src="logo.png" alt="Logo"></div>
+                <a href="#">Home <span class="fa-solid fa-house"></span></a><br>
+                <a href="#">History <span class="fa-solid fa-book"></span></a><br>
+                <a href="#">Settings <i class="fa-solid fa-gear"></i></a><br>
+                <a href="#">Log out <span class="fa-solid fa-right-from-bracket"></span></a>
+            </div>
+        </div>
+
+        <!-- Horizontal nav -->
+        <section class="content">
+            <!-- MAIN -->
+            <main>
+                <div class="head-title">
+                    <div class="left">
+                        <h1>Hello, <span id="displayNameOfUser">Robotron</span></h1><br>
+                        <ul class="breadcrumb">
+                            <li class="dash-dash">
+                                <a href="#">Dashboard</a>
+                            </li>
+                            <li><span class="fa-solid fa-greater-than"></span></li>
+                            <li>
+                                <a class="active" href="#">Home</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="box-info">
+                    <li>
+                        <i class='bx bxs-calendar-check'></i>
+                        <span class="text">
+                            <h5>Balance</h5>
+                            <div id="balance-div">
+                                <h2 id="amountFromJavascript">1000</h2>
+                            </div>
+                            <div id="accountNum"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <i class='bx bxs-group'></i>
+                        <span class="text">
+                            <h3>Send Money</h3>
+                        </span>
+                        <div class="btn-class"><button onclick="transfer()"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <i class='bx bxs-dollar-circle'></i>
+                        <span class="text">
+                            <h3>Loan</h3>
+                        </span>
+                        <div class="btn-class"><button><i class="fa-solid fa-coins"></i></button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="last-div">
+                    <div class="table-data">
+                        <div class="order">
+                            <div class="head">
+                                <h4>Transactions</h4>
+                                <a class='bx bx-search'>See All</a>
+                                <i class='bx bx-filter'></i>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>Firstname</th>
+                                        <th>Account number</th>
+                                        <th>Amount Transfered</th>
+                                        <th>Date and Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="transactionDetails">
+                                    <!-- <tr>
+                                        <td>
+                                            <p>John Doe</p>
+                                        </td>
+                                        <td>01-10-2021</td>
+                                        <td><span class="status completed">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>John Doe</p>
+                                        </td>
+                                        <td>01-10-2021</td>
+                                        <td><span class="status pending">Pending</span></td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-div">
+                            <li>
+                                <span class="text">
+                                    <img src="refer=.png" alt="referPic">
+                                    <h5>Earn passive income on alatbyWEMA</h5>
+                                    <hr>
+                                    <p>Earn Passive Income on Roqqu
+                                        Refer your friends and earn 0.5% on all their transactions when they sign up
+                                        using your referral link. Click here to get
+                                        your link.</p>
+                                </span>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+                crossorigin="anonymous"></script>
+            <script src="bank.js"></script>
+    </body>
+
+</html>
