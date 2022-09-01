@@ -16,20 +16,29 @@
     <body>
         <center>
             <div class="login-div">
-                <div class="logo"><img src="logo.png" alt="Logo"></div>
-                <div class="title">Login</div>
-                <div class="form-field">
-                    <div class="email-div"><span class="fa fa-envelope"></span><input type="email" id=""
-                            class="email-input" placeholder="Email" required></div>
-                    <div class="password-div"><span class="fa fa-lock"></span><input type="password" id=""
-                            class="pass-input" placeholder="Password" required></div>
+                <div class="logo">
+                    <img src="logo.png" alt="Logo">
                 </div>
-                <button class="login-btn">Login</button>
+                <div class="title">Login</div>
+
+                <div class="form-field">
+                    <small id="disp" style="color: red;"></small>
+                    <div class="email-div">
+                        <span class="fa fa-envelope"></span>
+                        <input type="email" id="Email" class="email-input" placeholder="Email" required>
+                    </div>
+                    <div class="password-div">
+                        <span class="fa fa-lock"></span>
+                        <input type="password" id="Password" class="pass-input" placeholder="Password" required>
+                    </div>
+                </div>
+                <button class="login-btn" onclick="logIn()">Login</button>
                 <div class="links">
                     <a href="#">Forgot password?</a> <strong>OR</strong> <a href="signUp.html">Create account</a>
                 </div>
             </div>
         </center>
+        <script src="bank.js"></script>
     </body>
 
 </html>

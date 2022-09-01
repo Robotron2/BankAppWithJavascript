@@ -9,12 +9,20 @@ header {
   height: 6em;
   border-radius: 0px;
   border-radius: 0px;
-  background: #9ccde0;
-  box-shadow: inset -5px -5px 10px #6c8d9b, inset 5px 5px 10px #ccffff;
+  background: #eff1ff;
+  /* box-shadow: inset -5px -5px 10px #6c8d9b, inset 5px 5px 10px #ccffff; */
 }
 
+body{
+  background-color: #fbfbfb;
+}
+
+header{
+  margin-bottom: 2%;
+}
 header div {
   padding: 1em;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,18 +45,19 @@ header nav ul {
 header nav ul li {
   margin: 0 1rem;
 }
-
+.container-fluid{
+  padding:0 3% 8%;
+}
 header nav ul li a {
   text-decoration: none;
   text-transform: capitalize;
-  color: #111;
+  color: #6f0399;
   font-weight: 600;
-  font-size: larger;
+  font-size: 16px;
 }
 
 header nav ul li a:hover {
-  background-color: #d63384;
-  color: blue;
+  font-size: 32px;
 }
 .background {
   width: 100%;
@@ -56,6 +65,7 @@ header nav ul li a:hover {
   background-image: url(image/money.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 2%;
 }
 .section-heading {
   display: flex;
@@ -68,25 +78,33 @@ header nav ul li a:hover {
   background-color: rgba(17, 25, 40, 0.81);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
+  margin-left: -40px;
 }
-.section-heading h1 {
+.section-heading p {
   font-family: "Roboto", sans-serif;
-  width: 50%;
-  height: 30vh;
-  padding: 20px;
+  width: 60%;
+  font-size: 2rem;
+  padding: 1%;
   color: gold;
   text-align: center;
-  display: flex;
+}
+
+#carouselSection{
+  margin-bottom: 2%;
 }
 #card {
-  background-color: #9ccde0;
+  /* background-color: #9ccde0; */
+  margin: 2%;
+  border: 1px solid lightblue;
+  
 }
 
 .card {
-  margin: 10px;
+  margin: 2%;
   border-radius: 0px;
-  background: #9ccde0;
-  box-shadow: inset -5px -5px 10px #6c8d9b, inset 5px 5px 10px #ccffff;
+  /* background: #9ccde0; */
+  margin: 30px;
+  /* box-shadow: inset -5px -5px 10px #6c8d9b, inset 5px 5px 10px #ccffff; */
 }
 footer {
   margin: 5 0px;
