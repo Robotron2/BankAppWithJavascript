@@ -93,14 +93,16 @@ header nav ul li a:hover {
   margin-bottom: 2%;
 }
 #card {
-  background-color: #9ccde0;
+  /* background-color: #9ccde0; */
   margin: 2%;
+  border: 1px solid lightblue;
   
 }
 
 .card {
-  margin: 10px;
+  margin: 2%;
   border-radius: 0px;
-  background: #9ccde0;
+  /* background: #9ccde0; */
+  margin: 30px;
   /* box-shadow: inset -5px -5px 10px #6c8d9b, inset 5px 5px 10px #ccffff; */
 }
