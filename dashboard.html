@@ -52,7 +52,6 @@
 
                 <ul class="box-info">
                     <li>
-                        <i class='bx bxs-calendar-check'></i>
                         <span class="text">
                             <h5>Balance</h5>
                             <div id="balance-div">
@@ -66,7 +65,21 @@
                         <span class="text">
                             <h3>Send Money</h3>
                         </span>
-                        <div class="btn-class"><button onclick="transfer()"><i class="fa-solid fa-paper-plane"></i></button>
+                        <div class="btn-class"><button onclick="transfer()" id="sendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+
+
+                        <!-- The Modal -->
+                        <div id="sendMoneyModal" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <input class="rounded-pill" type="text" name="" id="" placeholder="Name of recipient">
+                                <input class="rounded-pill" type="text" name="" id="" placeholder="Account Number">
+                                <input class="rounded-pill" type="text" name="" id="" placeholder="Bank Name">
+                                <input class="rounded-pill" type="text" name="" id="" placeholder="Amount">
+                                <button class="btn btn-lg btn-outline-purple">Send Money</button>
+                            </div>
                         </div>
                     </li>
                     <li>
@@ -97,20 +110,7 @@
                                     </tr>
                                 </thead>
                                 <tbody id="transactionDetails">
-                                    <!-- <tr>
-                                        <td>
-                                            <p>John Doe</p>
-                                        </td>
-                                        <td>01-10-2021</td>
-                                        <td><span class="status completed">Completed</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>John Doe</p>
-                                        </td>
-                                        <td>01-10-2021</td>
-                                        <td><span class="status pending">Pending</span></td>
-                                    </tr> -->
+                                   
                                 </tbody>
                             </table>
                         </div>
@@ -118,7 +118,7 @@
                             <li>
                                 <span class="text">
                                     <img src="refer=.png" alt="referPic">
-                                    <h5>Earn passive income on alatbyWEMA</h5>
+                                    <h5>Earn passive income </h5>
                                     <hr>
                                     <p>Earn Passive Income on Roqqu
                                         Refer your friends and earn 0.5% on all their transactions when they sign up
