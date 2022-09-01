@@ -63,7 +63,7 @@ const logIn =()=>{
         }
         if(found){
             alert("Login Successful")
-            window.location.href = "/dashboard.html"      
+            window.location.href = "dashboard.html"      
         }
         else{
             error.innerHTML = 'Incorrect Email or Password!'
