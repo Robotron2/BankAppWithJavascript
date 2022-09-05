@@ -31,7 +31,8 @@ const registerBtn = ()=>{
             firstName:firstname.value,
             lastName:lastname.value, 
             email: useremail.value, 
-            password: userpassword.value
+            password: userpassword.value,
+            initialBalance
         }
         detailsOfUser.push(userDetails)
         // console.log(detailsOfUser)
@@ -90,6 +91,7 @@ const logIn =()=>{
 
 
 let initialBalance = 2000
+displayBalance.innerHTML= initialBalance
  const sendMoney =()=>{
     if(nameofrecipient.value== "" || amountEntered.value=="" || acctNum.value=="" || bankname.value==""){
         alert('Oppsss! Empty fields!')
@@ -97,7 +99,7 @@ let initialBalance = 2000
     else{
         transferdetails ={
             nameOfRecipient : nameofrecipient.value,
-            transferAmount : amountEntered.value,
+            transferAmount : Number(amountEntered.value),
             accountNumber: acctNum.value,
             bankName : bankname.value,
             mydate : new Date()
@@ -105,19 +107,18 @@ let initialBalance = 2000
             if(amountEntered <= 0){
                 alert("Guy! transfer tangiblle amount")
             }
-            else if(amountEntered > initialBalance){
+            else if(parseInt(amountEntered.value) > initialBalance){
                 alert("Insufficient Fund! Be Careful!")
             }
             else{
-                initialBalance = initialBalance - (parseInt(amountEntered));
+                initialBalance = initialBalance - (parseInt(amountEntered.value));
                alert("Withdrawal Successful!")  
                displayBalance.innerHTML =  initialBalance
-            //    amountFromJavascript.innerHTML = initialBalance
                allTransferDetails.push(transferdetails)
                localStorage.setItem('transaction',JSON.stringify(allTransferDetails))
                allTransferDetails.map((item,index)=>{
                 
-                transactionDetails.innerHTML = `
+                transactionDetails.innerHTML += `
                 <tr>
                     <td>${index+1}</td>
                     <td>${item.nameOfRecipient}</td>
